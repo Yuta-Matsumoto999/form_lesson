@@ -1,1 +1,322 @@
 @charset "utf-8";
+/*共通部分*/
+.wrapper{
+  padding: 32px 0;
+  width: 100%;
+  background-color:#f2f6f7;
+}
+
+.inner{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.main{
+  background: #fff;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+}
+
+/*ページトップ*/
+.title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.first-content{
+  display: flex;
+  margin: 30px 0 5px 0;
+}
+
+.first-content-box{
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  width: 50%;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.first-content-box:last-child{
+  margin-left: 8px;
+}
+
+.left{
+  background: #3b5999;
+  border-color: #3b5999;
+}
+
+.left:hover{
+  background: #344e87;
+  border-color: transparent;
+}
+
+.left-text{
+  color: #fff;
+}
+
+.right:hover{
+  background: #f7f7f7;
+}
+
+.right-text{
+  color: #dd4b39;
+}
+
+.first-content-bottom{
+  text-align: center;
+  color: #949697;
+  font-size: 14px;
+}
+
+.middle-content{
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.middle-content::before{
+  content: "";
+  position: absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  height:1px;
+  width: 100%;
+  background: #949697;
+}
+
+.middle-content-text{
+  display: inline-block;
+  font-size: 13px;
+  color: #949697;
+  padding: 0 10px;
+  background: #fff;
+  position: relative;
+}
+
+
+/*form共通部分*/
+.box-text{
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.box{
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.input-unit{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.input-erea{
+  border: 1px solid #d9d9d9;
+  background: #fbfbfb;
+  height: 36px;
+  border-radius: 3px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.input-erea:focus{
+  background: #fff;
+  border-color:rgba(59, 133, 133, .4) ;
+  box-shadow: 0 0 0 2px rgba(1,191,189,.1);
+}
+
+.half{
+  width: 50%;
+}
+
+.full{
+  width: 100%;
+}
+
+.alart{
+  color: #dd4b39;
+}
+
+/*名前*/
+.name{
+  display: flex;
+}
+
+.name-box{
+  width: 100%;
+}
+
+.name-box:last-child{
+  margin-left: 8px;
+}
+
+/*性別*/
+.gender-contents{
+  display: flex;
+  font-size: 16px;
+}
+
+.gender-content{
+  margin-left: 15px;
+}
+
+.gender-content:first-child{
+  margin-left: 0;
+}
+
+.gender-content span{
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-content span::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-input:checked + span::after{
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+.gender-input{
+  display: none;
+}
+
+/*出身*/
+.origin-box{
+  position: relative;
+  }
+
+.select-box::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.origin-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+/*コース*/
+.course-content {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course-content:last-child {
+  margin-bottom: 0;
+}
+
+.course-content-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-content-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-content input:checked + .course-content-text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+.course input{
+  display: none;
+}
+
+/*備考*/
+.free{
+  height: 90px;
+}
+
+/*送信ボタン*/
+.submit{
+  background:#01bfbd;
+  color: #fff;
+  font-size: 15px;
+  height: 50px;
+  transition: all 0.3s;
+}
+
+.submit:hover{
+  background: #01a6a4;
+}
+
+/*利用規約*/
+.agree{
+  font-size: 12px;
+}
+
+/*bottom*/
+.bottom{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bttom-content{
+  display: inline-block;
+}
+
+.color{
+  color: #01a6a4;
+}
+
+.color:hover{
+  color: #01bfbd;
+}
