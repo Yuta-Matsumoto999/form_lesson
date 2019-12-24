@@ -24,22 +24,22 @@
 /*ページトップ*/
 .title{
   text-align: center;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .first-content{
   display: flex;
-  margin: 30px 0 5px 0;
+  margin: 25px 0 5px 0;
 }
 
 .first-content-box{
   display: block;
-  padding: 15px 0;
+  padding: 12px 0;
   text-align: center;
   border-radius: 3px;
   border: 1px solid #d9d9d9;
   width: 50%;
-  font-size: 14px;
+  font-size: 13px;
   transition: all 0.3s;
 }
 
@@ -72,7 +72,7 @@
 .first-content-bottom{
   text-align: center;
   color: #949697;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .middle-content{
@@ -109,7 +109,7 @@
 }
 
 .box{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -222,7 +222,7 @@
   display: inline-block;
   position: absolute;
   right: 10px;
-  top: 45%;
+  top: 56%;
   transform: rotate(45deg);
   height: 5px;
   width: 5px;
@@ -298,6 +298,13 @@
   background: #01a6a4;
 }
 
+.submit:active{
+  background: #fff;
+  color:  #01a6a4;
+  outline: none;
+  border: 1px solid #d9d9d9;
+}
+
 /*利用規約*/
 .agree{
   font-size: 12px;
@@ -307,6 +314,12 @@
 .bottom{
   text-align: center;
   margin-top: 30px;
+}
+
+.bottom-content p,a{
+  margin-bottom:8px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .bttom-content{
@@ -319,4 +332,9 @@
 
 .color:hover{
   color: #01bfbd;
+  text-decoration: none;
+}
+
+.color-bottom:hover{
+  text-decoration: underline;
 }
